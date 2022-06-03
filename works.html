@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works</title>
+    <link rel="icon" type="image/svg+xml" href="icon.png" />
+    <script defer src="node_modules/swup/dist/swup.min.js"></script>
+	<script defer type="module" src="/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="navbar">
+            <a href="/index.html"><img id="tagimage" class="tagimage" src="tag-images/0.png"></a>
+            <ul>
+                <a href="/works.html"><li>Works</li></a>
+                <a href="https://github.com/HazyAutumnRain"><li>Github</li></a>
+            </ul>
+        </div>
+    </div>
+    <main id="swup" class="transition-fade">
+        <div class="workscontainer">
+            <h1>Works</h1>
+            <div class="items">
+                <div class="itemcontainer" onclick="window.location = 'https://github.com/HazyAutumnRain/TaskChecker'">
+                    <img src="taskchecker.png">
+                    <p>A simple desktop app to track your daily tasks. Made using <a class="tech">Node, Electron and (HTML, CSS and JS)</a>.</p>
+                </div>
+                <div class="itemcontainer" onclick="window.location = 'https://github.com/HazyAutumnRain/TypeEffect'">
+                    <img src="typeeffect.png">
+                    <p>A desktop app that tracks your typing speed in words per minute using different modes of typing. Made using <a class="tech">Node, Electron and (HTML, CSS and JS)</a>.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

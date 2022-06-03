@@ -1,0 +1,166 @@
+body {
+	font-family: "helvetica", "sans-serif";
+	background-color: #161B22;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar h2 {
+	color: white;
+	padding-right: 10px;
+}
+
+.navbar ul {
+	display: flex;
+	width: 105px;
+	justify-content: space-between;
+	list-style-type: none;
+}
+
+.navbar ul a {
+	color: white;
+	text-decoration: none;	
+}
+
+.navbar ul a:hover {
+	text-decoration: underline;
+}
+
+.boximage {
+	width: 100px;
+	margin-top: 50px;
+}
+
+.tagimage {
+	width: 35px;
+	animation: upDown 1.5s alternate infinite ease-in-out;
+}
+
+@keyframes upDown {
+	to { transform: translatey(10px);}
+}
+
+.infocontainer {
+	margin-top: 20px;
+	line-height: 40%;
+	color: white;
+}
+
+.infocontainer h2 {
+	font-family: 'M PLUS Rounded 1c', 'sans-serif';
+}
+
+.textcontainer {
+	color: white;
+	width: 375px;
+}
+
+.textcontainer h2 {
+	text-decoration: underline;
+	margin-bottom: -8px;
+	font-size: 20px;
+}
+
+.textcontainer a {
+	color: white;
+	text-decoration: none;
+	display: flex;
+}
+
+.textcontainer a:hover {
+	text-decoration: underline;
+}
+
+.tech {
+	font-weight: bold;
+}
+
+.transition-fade {
+	opacity: 1;
+	transition: 1s;
+	transform: translateY(0);
+}
+
+
+html.is-animating .transition-fade {
+	opacity: 0;
+	transform: translateY(100%);
+}
+
+.workscontainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+}
+
+.items {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+
+.workscontainer h1 {
+	text-decoration: underline;
+	margin-bottom: -20px;
+}
+
+.itemcontainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+	width: 300px;
+	margin-right: 25px;
+	margin-left: 25px;
+}
+
+
+.itemcontainer h4 {
+	margin-bottom: 2px;
+}
+
+.itemcontainer img {
+	width: 300px;
+	border-radius: 8px;	
+}
+
+.itemcontainer:hover {
+	cursor: pointer;
+}
+
+.techcontainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.linkcontainer {
+	display: flex;
+	flex-direction: column;
+}
+
+span:hover {
+	cursor: pointer;
+}
+
+.textcontainer a:hover {
+	text-decoration: none;
+}
+
+.towhite {
+	filter:  brightness(0) invert(1);
+}
